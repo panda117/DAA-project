@@ -38,7 +38,7 @@ void titans_load_from_file() {
         return;
     }
     c = 0;
-    while (fscanf(file, "%d %49s %99s %49[^\n]", &b[c].id, b[c].code, b[c].level, b[c].des) == 4) {
+    while (fscanf(file, "%d %49s %99s %99[^\n]", &b[c].id, b[c].code, b[c].level, b[c].des) == 4) {
         c++;
     }
     fclose(file);
